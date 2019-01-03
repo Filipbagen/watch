@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.clock {
+    color: rgb(230,175,128);
+    margin: auto;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pulsate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    font-size: 40px;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+    font-size: 40px;
+    color: rgb(230,175,128);
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 1.0;
+    }
+    50% { 
+        opacity: 0.8;
+    }
+    70% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.4;
+    }
+    100% { 
+        opacity: 0.8;
+    }
+}
