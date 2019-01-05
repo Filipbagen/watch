@@ -1,9 +1,7 @@
 function clock() {
-    var fullDate = new Date();
-    var hours = fullDate.getHours();
-    var minutes = fullDate.getMinutes();
-
-    var colon = document.getElementById("pulsate");
+    const fullDate = new Date();
+    let hours = fullDate.getHours();
+    let minutes = fullDate.getMinutes();
 
     if (hours < 10) {
         hours = "0" + hours;
@@ -13,7 +11,18 @@ function clock() {
         minutes = "0" + minutes;
     }
 
-    document.getElementById("numbers").innerHTML = hours + ":" + minutes;
+    document.querySelector('#hours').innerHTML = hours;
+    document.querySelector('#minutes').innerHTML = minutes;
 }
 
-setInterval(clock, 1000);
+setInterval(clock);
+
+function goodnight() {
+    document.getElementById("on").style.display = "none";
+    document.getElementById("off").style.display = "inline";
+}
+
+function eveningLights() {
+    //  document.getElementById("off").style.display = "none";
+    document.getElementById("on").style.display = "inline";
+}

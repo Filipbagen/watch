@@ -10,25 +10,23 @@ body {
 
 .clock {
     color: rgb(230,175,128);
-    margin: auto;
     font-size: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin: 0 1px;
 }
 
 #pulsate {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
-    font-size: 40px;
     -webkit-animation: pulsate 1s ease-out;
     -webkit-animation-iteration-count: infinite; 
     opacity: 0.5;
-    font-size: 40px;
-    color: rgb(230,175,128);
 }
 @-webkit-keyframes pulsate {
     0% { 
@@ -46,4 +44,43 @@ body {
     100% { 
         opacity: 0.8;
     }
+}
+
+.lamp {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: flex;
+    flex-direction: row */
+}
+
+#on {
+    height: 100px;
+    /* position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    transition: 0.2s;
+}
+
+#on:hover {
+    cursor: pointer;
+    /* height: 110px; */
+    transition: 0.2s;
+}
+
+#off {
+    height: 100px;
+    /* position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    transition: 0.2s;
+}
+
+#off:hover {
+    cursor: pointer;
+    /* height: 110px; */
+    transition: 0.2s;
 }

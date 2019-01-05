@@ -12,13 +12,21 @@
 </head>
 
 <body>
-
-    <p id="pulsate">:</p>
-
     <div class="clock">
-        <div id="numbers"></div>
+        <p id="hours"></p>
+        <p id="pulsate">:</p>
+        <p id="minutes"></p>
     </div>
 
+    <div class="lamp">
+
+        <!-- <a href="https://maker.ifttt.com/trigger/evening_lights/with/key/dgcuzjXyAQC2XoMhSnPyUb" target="_blank"> -->
+        <img src="assets/img/on.svg" alt="" id="on" onclick="goodnight()">
+        </a>
+        <!-- <a href="https://maker.ifttt.com/trigger/goodnight/with/key/dgcuzjXyAQC2XoMhSnPyUb" target="_blank"> -->
+        <img src="assets/img/off.svg" alt="" id="off" onclick="eveningLights()">
+        </a>
+    </div>
 </body>
 
 </html>
