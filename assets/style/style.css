@@ -6,10 +6,10 @@ body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
     overflow: hidden;
+    color: rgb(230,175,128);
 }
 
 .clock {
-    color: rgb(230,175,128);
     font-size: 40px;
     position: absolute;
     top: 50%;
@@ -60,14 +60,14 @@ p {
     /* position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%); */
-    transition: 0.2s;
+    transform: translate(-50%, -50%); 
+    transition: 0.2s; */
 }
 
 #on:hover {
     cursor: pointer;
-    /* height: 110px; */
-    transition: 0.2s;
+    /* height: 110px; 
+    transition: 0.2s; */
 }
 
 #off {
@@ -75,12 +75,18 @@ p {
     /* position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%); */
-    transition: 0.2s;
+    transform: translate(-50%, -50%);
+    transition: 0.2s; */
 }
 
 #off:hover {
     cursor: pointer;
-    /* height: 110px; */
-    transition: 0.2s;
+    /* height: 110px;
+    transition: 0.2s; */
+}
+
+.date {
+    color: red;
+    top: 50%;
+    left: 50%;
 }

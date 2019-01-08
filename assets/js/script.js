@@ -17,6 +17,17 @@ function clock() {
 
 setInterval(clock);
 
+function day() {
+    const date = new Date(2015, 3, 21);
+    let day = fullDate.getDay();
+    let date = fullDate.getDate();
+
+    document.querySelector('#day').innerHTML = day;
+    document.querySelector('#date').innerHTML = date;
+
+    console.log('day');
+}
+
 function goodnight() {
     document.getElementById("on").style.display = "none";
     document.getElementById("off").style.display = "inline";
