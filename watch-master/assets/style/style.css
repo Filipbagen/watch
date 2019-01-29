@@ -17,6 +17,7 @@ body {
 
 .dateday {
     padding: 80px 12px 0 0;
+    /* border: 1px solid white; */
 }
 
 .info {
@@ -61,43 +62,4 @@ body {
     100% { 
         opacity: 0.8;
     }
-}
-
-.lamp {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* display: flex;
-    flex-direction: row */
-}
-
-#on {
-    height: 100px;
-    /* position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    transition: 0.2s; */
-}
-
-#on:hover {
-    cursor: pointer;
-    /* height: 110px; 
-    transition: 0.2s; */
-}
-
-#off {
-    height: 100px;
-    /* position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.2s; */
-}
-
-#off:hover {
-    cursor: pointer;
-    /* height: 110px;
-    transition: 0.2s; */
 }
