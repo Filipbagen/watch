@@ -1,39 +1,37 @@
-function clock() {
-    const fullDate = new Date();
-    let hours = fullDate.getHours();
-    let minutes = fullDate.getMinutes();
+// clock
+function clock () {
+  const fullDate = new Date()
+  let hours = fullDate.getHours()
+  let minutes = fullDate.getMinutes()
 
-    if (hours < 10) {
-        hours = "0" + hours;
-    }
+  minutes = ('0'+minutes).slice(-2)
+  hours = ('0'+hours).slice(-2)
 
-    if (minutes < 10) {
-        minutes = "0" + minutes;
-    }
-
-    document.querySelector('#hours').innerHTML = hours;
-    document.querySelector('#minutes').innerHTML = minutes;
+  document.querySelector('#hours').innerHTML = hours
+  document.querySelector('#minutes').innerHTML = minutes
 }
 
-setInterval(clock);
+setInterval(clock, 1000)
 
-function day() {
-    const date = new Date(2015, 3, 21);
-    let day = fullDate.getDay();
-    let date = fullDate.getDate();
+// get weekday and day
+function currentDate () {
+  const today = new Date()
+  const dayNumber = today.getDate()
 
-    document.querySelector('#day').innerHTML = day;
-    document.querySelector('#date').innerHTML = date;
-
-    console.log('day');
+  document.querySelector('#day').innerHTML = dayNumber
+  document.querySelector('#weekday').innerHTML = getDayString()
 }
 
-function goodnight() {
-    document.getElementById("on").style.display = "none";
-    document.getElementById("off").style.display = "inline";
+setInterval(currentDate)
+
+function init () {
+  clock()
+  currentDate()
 }
 
-function eveningLights() {
-    //  document.getElementById("off").style.display = "none";
-    document.getElementById("on").style.display = "inline";
+function getDayString () {
+  const today = new Date()
+  const weekdays = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+  const dayString = weekdays[today.getDay()]
+  return dayString
 }

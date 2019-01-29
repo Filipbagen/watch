@@ -8,28 +8,21 @@
     <title>Watch-out</title>
     <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
 </head>
 
-<body onload="clock();">
-    <div class="clock">
-        <p id="hours"></p>
-        <p id="pulsate">:</p>
-        <p id="minutes"></p>
-    </div>
+<body onload="init()">
+    <div class="info">
+        <div class="clock">
+            <p id="hours"></p>
+            <p id="pulsate">:</p>
+            <p id="minutes"></p>
+        </div>
 
-    <div class="date">
-        <p id="day"></p>
-        <p id="date"></p>
-    </div>
-
-    <div class="lamp">
-        <!-- <a href="https://maker.ifttt.com/trigger/evening_lights/with/key/dgcuzjXyAQC2XoMhSnPyUb" target="_blank"> -->
-        <img src="assets/img/on.svg" alt="" id="on" onclick="goodnight()">
-        </a>
-        <!-- <a href="https://maker.ifttt.com/trigger/goodnight/with/key/dgcuzjXyAQC2XoMhSnPyUb" target="_blank"> -->
-        <img src="assets/img/off.svg" alt="" id="off" onclick="eveningLights()">
-        </a>
+        <div class="dateday">
+            <p id="weekday"></p>
+            <p id="day"></p>
+        </div>
     </div>
 </body>
 
